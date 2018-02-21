@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/search_for_place_in_trip"
+        android:orderInCategory="102"
+        android:icon="@android:drawable/ic_search_category_default"
+        android:title="Search For Places"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/all_places_in_trip"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_place_black_24dp"
+        android:title="Search For Places"
+        app:showAsAction="always" />
+
+
+    <item
+        android:id="@+id/map_places_in_trip"
+        android:orderInCategory="99"
+        android:icon="@drawable/ic_map_black_24dp"
+        android:title="Map For Places"
+        app:showAsAction="always" />
+
+
+</menu>

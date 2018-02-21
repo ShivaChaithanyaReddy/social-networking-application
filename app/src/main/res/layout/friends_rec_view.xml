@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/recycler_each_item_layout"
+    android:background="@drawable/border_for_recview">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Complete_layout">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            app:srcCompat="@mipmap/ic_launcher"
+            android:id="@+id/frnd_pic"
+            android:paddingTop="10dp"
+            android:layout_weight="0.09" />
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="0.48"
+            android:paddingLeft="5dp"
+            android:layout_marginRight="50dp"
+            >
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/frnd_id"
+                android:layout_marginTop="@dimen/_15sdp"
+                />
+
+        </LinearLayout>
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Send Request"
+    android:id="@+id/send_request"/>
+    </LinearLayout>
+
+</FrameLayout>

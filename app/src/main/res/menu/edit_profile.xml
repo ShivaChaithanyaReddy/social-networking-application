@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:orderInCategory="100"
+        android:title="Requests"
+        app:showAsAction="always"
+        android:id="@+id/notify_frnds"
+        android:icon="@drawable/notify"/>
+
+    <item
+        android:id="@+id/action_edit_profile"
+        android:orderInCategory="101"
+        android:icon="@android:drawable/ic_menu_edit"
+        android:title="@string/action_settings"
+        app:showAsAction="always" />
+
+
+    <item
+        android:id="@+id/search_for_friends"
+        android:orderInCategory="101"
+        android:icon="@android:drawable/ic_search_category_default"
+        android:title="Search For Friends"
+        app:showAsAction="always" />
+
+
+
+
+</menu>

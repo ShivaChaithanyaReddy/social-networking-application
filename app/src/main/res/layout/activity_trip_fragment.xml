@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.first.homework09.TripFragment">
+
+    <LinearLayout
+        android:id="@+id/Trip_profile_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_130sdp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_70sdp"
+            android:layout_gravity="center"
+            android:src="@drawable/unclogo"
+            android:id="@+id/Trip_circleView"/>
+
+        <TextView
+            android:id="@+id/Trip_profile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/_10sdp"
+            android:textSize="@dimen/_16sdp"
+            android:textColor="@color/colorWhite"
+            android:layout_gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+        <TextView
+            android:id="@+id/country"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/colorWhite"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_4sdp" />
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view_chat_trip"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/edit_text_message_trip"
+        app:layoutManager="LinearLayoutManager"
+        android:layout_below="@+id/Trip_profile_header" />
+
+    <EditText
+        android:id="@+id/edit_text_message_trip"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/margin_small"
+        android:background="@drawable/rounded_rect_bg"
+        android:hint="Type your message . . . ."
+        android:imeOptions="actionSend"
+        android:inputType="text"
+        android:maxLines="1"
+        android:padding="@dimen/padding_small" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="bottom|right"
+        android:text="send"
+        android:textAlignment="center"
+        android:id="@+id/sendMsgBtn_trip"
+        android:layout_below="@+id/recycler_view_chat_trip"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:id="@+id/upload_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_menu_report_image"
+        android:layout_below="@+id/recycler_view_chat_trip"
+        android:layout_toRightOf="@+id/edit_text_message_trip"
+        android:layout_toEndOf="@+id/edit_text_message_trip" />
+
+
+</RelativeLayout>

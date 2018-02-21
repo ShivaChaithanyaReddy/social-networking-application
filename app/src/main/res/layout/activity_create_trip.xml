@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/_16sdp"
+    android:orientation="vertical"
+    tools:context="com.example.first.homework09.CreateTripActivity">
+
+    <EditText
+        android:id="@+id/trip_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Location"
+        tools:layout_editor_absoluteX="83dp"
+        tools:layout_editor_absoluteY="82dp"
+        android:layout_below="@+id/trip_title"
+        android:layout_alignLeft="@+id/trip_title"
+        android:layout_alignStart="@+id/trip_title"
+        android:layout_marginTop="30dp" />
+
+    <EditText
+        android:id="@+id/trip_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Title of the trip"
+        tools:layout_editor_absoluteX="83dp"
+        tools:layout_editor_absoluteY="16dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/add_image_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/trip_location"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:text="Add Image" />
+
+    <Button
+        android:id="@+id/create_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/add_image_btn"
+        android:layout_alignStart="@+id/add_image_btn"
+        android:layout_centerVertical="true"
+        android:text="Create" />
+
+
+</RelativeLayout>
